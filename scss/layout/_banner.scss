@@ -1,0 +1,254 @@
+/* ====================== */
+/*         Banner         */
+/* ====================== */
+#mt_banner {
+  padding-top: 80px;
+  overflow: hidden;
+  .static {
+    position: static;
+  }
+  .relative {
+    position: relative;
+  }
+
+  @media only screen and (max-width: 991px) {
+    height: 100% !important;
+    position: relative;
+  }
+  @media only screen and (min-width: 480px) and (max-width: 620px) {
+    height: 560px !important;
+    overflow: hidden;
+    position: relative;
+  }
+  .col-md-6.col-sm-6.col-xs-6,
+  .col-xs-5 {
+    @media only screen and (max-width: 620px) {
+      width: 100%;
+    }
+    @media only screen and (min-width: 520px) and (max-width: 620px) {
+      padding: 0;
+    }
+  }
+  .col-xs-offset-1 {
+    @media only screen and (max-width: 620px) {
+      margin-left: 0;
+    }
+  }
+  .banner_caption_text {
+    margin-top: -170px;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    @media only screen and (min-width: 620px) and (max-width: 640px) {
+      margin-top: -150px;
+    }
+    @media only screen and (max-width: 620px) {
+      margin-top: 24px;
+      position: static;
+      top: 0;
+      width: 100%;
+    }
+    .intro_text {
+      position: relative;
+      &:before {
+        background: #444 none repeat scroll 0 0;
+        content: "";
+        height: 1px;
+        left: -514px;
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        width: 500px;
+      }
+    }
+    h1 {
+      color: $tundora;
+      position: relative;
+      margin: 10px 0 15px 0;
+      font-weight: 800;
+      @media only screen and (max-width: 991px) {
+        margin-bottom: 0;
+        font-size: 30px;
+      }
+      @media only screen and (max-width: 767px) {
+        margin: 0;
+        font-size: 30px;
+      }
+      @media only screen and (max-width: 640px) {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 15px;
+        position: relative;
+      }
+      @media only screen and (max-width: 480px) {
+        font-size: 26px;
+      }
+      span.light_text_rt {
+        font-weight: 200;
+      }
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 25px;
+      @media only screen and (max-width: 991px) {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      @media only screen and (max-width: 640px) {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 30px;
+      }
+    }
+    .signature {
+      margin-bottom: 0;
+      img {
+        width: 14%;
+        margin-top: 15px;
+      }
+    }
+    .social_icons {
+      text-align: left !important;
+      a {
+        width: 25px;
+        height: 25px;
+        line-height: 25px !important;
+        position: relative;
+        margin: 0 6px;
+        text-align: center;
+        display: inline-block;
+        color: $tundora;
+        -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        i,
+        span {
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: 1px solid $tundora;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          border-radius: 2px;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+          -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+          -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+          -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+          transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        }
+        &:hover {
+          color: $white;
+          &:before {
+            background: $tundora;
+          }
+        }
+      }
+    }
+  }
+  .banner_caption_img {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    @media only screen and (min-width: 480px) and (max-width: 620px) {
+      float: right;
+      position: relative;
+      text-align: center;
+      top: -90px;
+      width: 200px;
+    }
+    @media only screen and (max-width: 480px) {
+      margin: 0 auto;
+      width: 200px;
+    }
+    &:before {
+      background: url("../images/circle-lines.svg");
+      border-radius: 50%;
+      content: "";
+      height: 500px;
+      position: absolute;
+      left: 50%;
+      width: 500px;
+      z-index: -1;
+      top: 0;
+      transform: translate(-50%, 0);
+      @media only screen and (max-width: 991px) {
+        height: 350px;
+        width: 350px;
+      }
+      @media only screen and (max-width: 640px) {
+        bottom: -90px;
+        height: 250px;
+        width: 250px;
+      }
+      @media only screen and (max-width: 480px) {
+        bottom: -110px;
+        right: -80%;
+      }
+    }
+    img {
+      width: 100%;
+      @media only screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+  .darker {
+    .intro_text {
+      &:before {
+        background: $mercury;
+      }
+    }
+    .banner_caption_img {
+      &:before {
+        background: url("../images/circle-lines-dark.svg");
+      }
+    }
+    .banner_caption_text {
+      span {
+        color: $mercury;
+      }
+      h1 {
+        color: $white;
+        span {
+          color: $white;
+        }
+      }
+    }
+    .social_icons {
+      a {
+        color: $white;
+        &:before {
+          border: 1px solid $white;
+        }
+        &:hover {
+          color: $tundora;
+          &:before {
+            background: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ========================== */
+/*         End Banner         */
+/* ========================== */

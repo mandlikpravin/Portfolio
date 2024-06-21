@@ -1,0 +1,116 @@
+/* ============================ */
+/*            About Me          */
+/* ============================ */
+
+#mt_about_me {
+    padding: 100px 0;
+    position: relative;
+    @media only screen and (max-width: 640px) {
+        padding: 60px 0;
+    }
+    h2 {
+        @media only screen and (max-width: 640px) {
+            margin-bottom: 30px;
+        }
+    }
+    .mt_about_me {
+      .about_heading {
+        span {
+          color: #CDCDCD;
+          font-size: 16px;
+          margin-left: 30px;
+          position: relative;
+          display: block;
+          &:before {
+            background: $tundora;
+            content: "";
+            height: 1px;
+            left: -38px;
+            position: absolute;
+            top: 11px;
+            width: 30px;
+          }
+        }
+        h3 {
+          margin-top: 0;
+        }
+      }
+        p {
+            margin-bottom: 38px;
+        }
+        @media only screen and (max-width: 640px) {
+            margin-bottom: 30px;
+        }
+    }
+    .about_img {
+        text-align: center;
+        position: relative;
+        @media only screen and (max-width: 767px) {
+            width: 50%;
+            margin: 30px auto 0 auto;
+        }
+        @media only screen and (max-width: 640px) {
+            width: 80%;
+            margin-top: 0;
+        }
+        @media only screen and (max-width: 480px) {
+            width: 100%;
+        }
+        &:before {
+            background: #f9f9f9 none repeat scroll 0 0;
+            content: "";
+            height: 384px;
+            position: absolute;
+            right: 20px;
+            top: -14px;
+            width: 380px;
+            @media only screen and (max-width: 1200px) {
+                width: 290px;
+                height: 294px;
+                right: 15px;
+            }
+            @media only screen and (max-width: 767px) {
+                width: 330px;
+                height: 340px;
+                right: -15px;
+            }
+            @media only screen and (max-width: 480px) {
+                width: 420px;
+                height: 410px;
+                right: -15px;
+            }
+            @media only screen and (max-width: 360px) {
+                width: 290px;
+                height: 280px;
+                right: -15px;
+            }
+        }
+        img {
+            width: 85%;
+            position: relative;
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+            }
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+            }
+        }
+    }
+    .darker {
+        .progress-title,
+        .progress-mark span,
+        .progress-title-holder {
+            color: $white !important;
+        }
+        .progress-content {
+            background-color: $white !important;
+        }
+        .progress-outter {
+            background-color: $tundora !important;
+        }
+    }
+}
+
+/* ================================= */
+/*         End How it Works          */
+/* ================================= */

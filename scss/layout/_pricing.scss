@@ -1,0 +1,229 @@
+/* ====================== */
+/*        Pricing         */
+/* ====================== */
+
+#mt_pricing {
+    padding: 100px 0;
+    @media only screen and (max-width: 640px) {
+        padding: 60px 0;
+    }
+    h2 {
+        @media only screen and (max-width: 640px) {
+            margin-bottom: 30px;
+        }
+    }
+    .section_heading {
+        margin-bottom: 90px;
+    }
+    .col-md-4 {
+        padding: 0;
+        @media only screen and (max-width: 767px) {
+            padding: 0 15px;
+        }
+    }
+    .main_pricing_conatiner.highlight_pricing {
+        margin-top: -30px;
+        padding-bottom: 55px;
+        @media only screen and (max-width: 767px) {
+            margin-top: 0;
+        }
+        &:hover {
+            a {
+                color: $Alabaster;
+                background-color: $Alabaster;
+                transition: all 0.5s ease;
+                text-shadow: initial;
+                -ms-box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+                -o-box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+                -webkit-box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+                -moz-box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+                box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+            }
+        }
+        .choose_plan_btn {
+            text-align: center;
+            padding-bottom: 40px;
+            .mt_btn_grey {
+                text-align: center;
+                -webkit-box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                -moz-box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                -o-box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                -ms-box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                i {
+                    font-size: 45px;
+                }
+            }
+        }
+
+    }
+    .main_pricing_conatiner {
+        background: $white none repeat scroll 0 0;
+        overflow: hidden;
+        border: 1px solid #f0ecec;
+        @media only screen and (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+        &:hover {
+            a {
+                color: $Alabaster;
+                background-color: $tundora !important;
+                transition: all 0.5s ease;
+                text-shadow: initial;
+                -ms-box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+                -o-box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+                -webkit-box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+                -moz-box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+                box-shadow: -1px 4px 36px 0 rgba(204, 204, 204, 0.61);
+            }
+        }
+        .price {
+            padding: 35px 0 0;
+            text-align: center;
+            position: relative;
+            h2 {
+                font-family: montserrat;
+                font-weight: 500;
+                margin-bottom: 5px;
+                color: $mine-shaft;
+                @media only screen and (max-width: 480px) {
+                    font-size: 24px;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                }
+                .price_icon {
+                    display: block;
+                    margin-bottom: 6px;
+                }
+                .price_icon i {
+                    color: $mine-shaft;
+                    font-size: 65px;
+                }
+            }
+            .price_tag {
+                font-family: montserrat;
+                font-size: 48px;
+                font-weight: 500;
+                color: $mine-shaft;
+                position: relative;
+                @media only screen and (max-width: 480px) {
+                    font-size: 40px;
+                }
+                .currency {
+                    font-size: 28px;
+                    left: -18px;
+                    position: absolute;
+                }
+            }
+            .per_month {
+                font-family: open sans;
+                font-size: 14px;
+                font-weight: 100;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: $mine-shaft;
+            }
+        }
+        .price_listing {
+            padding: 25px 40px 8px;
+            @media only screen and (max-width: 480px) {
+                padding: 70px 0 25px 20px;
+            }
+        }
+        .choose_plan_btn {
+            text-align: center;
+            padding-bottom: 40px;
+            .mt_btn_white {
+                background: $Alabaster;
+                text-align: center;
+                -webkit-box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                -moz-box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                -o-box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                -ms-box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                box-shadow: 2px 2px 5px 0 rgba(204, 204, 204, 0.61);
+                i {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+    .darker {
+        .main_pricing_conatiner {
+            h2 {
+                color: $white;
+            }
+            .price_icon {
+                i {
+                    color: $white !important;
+                }
+            }
+            background: $mine-shaft;
+            -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+            -moz-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+            -o-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+            -ms-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+            box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+            &:hover {
+                a {
+                    -ms-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                    -o-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                    -webkit-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                    -moz-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                    box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                }
+            }
+            .price {
+                background: $mine-shaft;
+                span {
+                    color: $white;
+                }
+            }
+            .price_listing {
+                background: $mine-shaft;
+            }
+            .choose_plan_btn {
+                background: $mine-shaft;
+                .mt_btn_white {
+                    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                    -moz-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                    -o-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                    -ms-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                }
+            }
+        }
+        .main_pricing_conatiner.highlight_pricing {
+            -ms-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+            -o-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+            -webkit-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+            -moz-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+            box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+            &:hover {
+                a {
+                    -ms-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                    -o-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                    -webkit-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                    -moz-box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                    box-shadow: -1px 4px 36px 0 rgba(0, 0, 0, 0.61);
+                }
+            }
+            .price_listing {
+                background: $mine-shaft;
+            }
+            .choose_plan_btn {
+                background: $mine-shaft;
+                .mt_btn_grey {
+                    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                    -moz-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                    -o-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                    -ms-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.61);
+                }
+            }
+        }
+    }
+}
+
+/* =========================== */
+/*        End Pricing          */
+/* =========================== */
