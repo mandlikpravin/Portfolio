@@ -1851,7 +1851,8 @@ input[type="submit"]:focus {
 
 @media only screen and (max-width: 991px) {
   .rt_about_welcome .content-column {
-    padding: 60px 30px;
+    padding: 30px 30px;
+    padding-bottom: 0px !important;
   }
 }
 
@@ -2120,6 +2121,7 @@ input[type="submit"]:focus {
 @media only screen and (max-width: 640px) {
   #mt_services {
     padding: 60px 0;
+    padding-bottom: 30px !important;
   }
 }
 
@@ -2992,6 +2994,8 @@ input[type="submit"]:focus {
 @media only screen and (max-width: 640px) {
   #mt_contact {
     padding: 60px 0;
+    padding-top: 30px;
+    padding-bottom: 0px !important;
   }
 }
 
@@ -3021,6 +3025,7 @@ input[type="submit"]:focus {
 @media only screen and (max-width: 480px) {
   #mt_contact .contact_form {
     padding: 20px 15px;
+    margin-top: 40px !important;
   }
 }
 
@@ -4774,4 +4779,18 @@ main {
     width: 180px;
     height: 260px;
   }
+}
+
+
+@media (max-width: 768px) {
+  #mt_portfolio .portfolio-box h5 {
+    bottom: 120px;
+  }
+  .main-title {
+   margin-bottom: 50px;
+}
+.image-column {
+  padding-top: -500px !important;
+  margin-top: -40px !important;
+}
 }
