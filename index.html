@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandlik Pravin — Security Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Fav.png">
+</head>
+
+<body>
+
+  <!-- ============================================================
+     BOOT SEQUENCE
+     ============================================================ -->
+  <div id="boot">
+    <pre id="boot-log"></pre>
+    <div class="boot-bar-row">
+      <span id="boot-pct">0%</span>
+      <div class="boot-bar">
+        <div class="boot-bar-fill" id="boot-fill"></div>
+      </div>
+      <span>PORTFOLIO v1.1.4</span>
+    </div>
+    <button id="boot-skip">skip [esc]</button>
+  </div>
+
+  <canvas id="matrix"></canvas>
+  <div class="grid-overlay"></div>
+
+  <!-- ============ NAV ============ -->
+  <header id="siteHeader">
+    <div class="logo"><span class="dot"></span> Mandlik // Pravin</div>
+    <nav class="pills" id="navPills">
+      <a class="pill-btn" href="#projects"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+          <path d="M9 18l6-6-6-6" />
+        </svg> View Work</a>
+      <a class="pill-btn" href="#skills"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+          <rect x="3" y="4" width="18" height="16" rx="2" />
+          <path d="M7 8h10M7 12h6" />
+        </svg> Skills</a>
+      <a class="pill-btn solid" target="_blank" href="PRAVIN MANDLIK RESUME.pdf"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+          stroke-linecap="round">
+          <path d="M20 6L9 17l-5-5" />
+        </svg> Hire Me</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="wrap hero-top">
+      <div class="hero-side left reveal">
+        <div class="eyebrow">Security Engineer</div>
+        <h1>VAPT, WEB, API<br>&amp; N/W, Mobile,&nbsp;AI, Cloud Security</h1>
+      </div>
+
+      <div class="avatar-stage reveal">
+        <div class="radar"></div>
+        <div class="avatar">
+          <img src="my-img.webp" alt="my-img">
+        </div>
+        <div class="name-block">
+          <div class="name-hand">SECURITY ENGINEER</div>
+          <div class="name-big">PRAVIN MANDLIK</div>
+        </div>
+        <div class="terminal">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <div class="body"><span class="prompt">$</span> <span id="typeTarget"></span><span class="caret"></span></div>
+        </div>
+      </div>
+
+      <div class="hero-side right reveal">
+        <div class="eyebrow" style="justify-content:flex-end;"><span style="order:2;">About Me</span></div>
+        <p>
+          Hi, I'm Pravin — a Security Engineer specializing in Vulnerability Assessment and Penetration Testing (VAPT),
+          securing web, API, mobile, cloud, and AI-powered applications by identifying vulnerabilities before attackers
+          can exploit them.
+        </p>
+      </div>
+    </div>
+
+    <div class="tech-strip reveal">
+      <div class="tech-track" id="techTrack"></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="section-tag reveal">01 / About</div>
+
+      <h2 class="reveal">
+        Identifying <span class="hl">security vulnerabilities</span>
+        before attackers exploit them, and helping build secure applications...
+      </h2>
+
+      <p class="lead reveal">
+        I'm a Security Engineer with hands-on experience in Vulnerability Assessment & Penetration Testing (VAPT),
+        specializing in Web, API, Mobile, Cloud, and AI Security. I focus on discovering security weaknesses,
+        validating their impact, and providing practical remediation to strengthen applications. By working closely
+        with development teams, I help integrate security throughout the development lifecycle and build secure,
+        production-ready systems.
+      </p>
+
+      <div class="cred-strip reveal">
+        <div class="cred-item">VAPT</div>
+        <div class="cred-item">OWASP Top 10</div>
+        <div class="cred-item">OWASP API Top 10</div>
+        <div class="cred-item">OWASP Mobile Top 10</div>
+        <div class="cred-item">AWS Security</div>
+        <div class="cred-item">AI/LLM Security</div>
+        <div class="cred-item">N/W Security</div>
+        <div class="cred-item">CEH Certified</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-tag">02 / Career</div>
+          <h2>Experience</h2>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-head">
+            <div class="tl-role">
+              Security Engineer <span>· Orgocloud Enterprises Private Limited</span>
+            </div>
+            <div class="tl-date">2023 — Present</div>
+          </div>
+
+          <div class="tl-company">Pune, Maharashtra</div>
+
+          <ul class="tl-list">
+            <li>Performed Vulnerability Assessment & Penetration Testing (VAPT) for Web, API, and Mobile applications
+              using Burp Suite Professional, Postman, Frida, Objection, ADB, and Android emulators.</li>
+
+            <li>Conducted reconnaissance and vulnerability assessments with Nmap, Nessus, SQLMap, Gobuster, Dirb, and
+              Wireshark to identify and validate security vulnerabilities.</li>
+
+            <li>Identified OWASP Top 10 and OWASP API Security Top 10 vulnerabilities, collaborated with development
+              teams on remediation, and validated security fixes before deployment.</li>
+
+            <li>Performed Cloud Security assessments on AWS environments and evaluated AI/LLM applications for Prompt
+              Injection, Sensitive Information Disclosure, and Insecure Output Handling.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-tag">03 / Background</div>
+          <h2>Education &amp; Certifications</h2>
+        </div>
+      </div>
+      <div class="edu-grid">
+        <div class="reveal" style="display:flex;flex-direction:column;gap:18px;">
+          <div class="edu-card">
+            <h3>Bachelor of Engineering in Computer Science</h3>
+            <div class="school">Dr. D.Y. Patil College of Engineering & Innovation</div>
+            <div class="yr">2020 — 2023</div>
+            <p>
+              Graduated with a CGPA of <strong>9.38</strong>. Built a strong foundation in computer science,
+              software engineering, networking, and cybersecurity while developing practical security skills.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <h3>Diploma in Computer Technology</h3>
+            <div class="school">Amrutvahini Polytechnic, Sangamner</div>
+            <div class="yr">2017 — 2020</div>
+            <p>
+              Graduated with <strong>84.06%</strong>. Studied programming, databases, operating systems,
+              networking, and computer hardware fundamentals that laid the foundation for cybersecurity.
+            </p>
+          </div>
+        </div>
+        <div class="cert-list reveal">
+
+          <div class="cert-row">
+            <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3 3" />
+              </svg></div>
+            <div>
+              <div class="cert-name">CEH — Certified Ethical Hacker</div>
+              <div class="cert-org">EC‑Council · 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-tag">04 / Work</div>
+          <h2>what i do</h2>
+        </div>
+      </div>
+      <div class="proj-grid" id="projGrid"></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-tag">05 / Toolkit</div>
+          <h2>Skills &amp; Tools</h2>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Web & API Security -->
+        <div class="skill-cat reveal">
+          <h3>Web &amp; API Security</h3>
+          <div class="tag-row">
+            <span class="tag">Burp Suite Pro</span>
+            <span class="tag">Postman</span>
+            <span class="tag">SQLMap</span>
+            <span class="tag">FFUF</span>
+            <span class="tag">OWASP ZAP</span>
+            <span class="tag">Nikto</span>
+            <span class="tag">DirB</span>
+            <span class="tag">DirBuster</span>
+            <span class="tag">SSLScan</span>
+          </div>
+        </div>
+
+        <!-- Network & Mobile -->
+        <div class="skill-cat reveal">
+          <h3>Network &amp; Mobile Security</h3>
+          <div class="tag-row">
+            <span class="tag">Nmap</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">Nessus</span>
+            <span class="tag">ADB</span>
+            <span class="tag">Frida</span>
+            <span class="tag">Objection</span>
+            <span class="tag">APKTool</span>
+            <span class="tag">MobSF</span>
+            <span class="tag">Drozer</span>
+            <span class="tag">Genymotion</span>
+          </div>
+        </div>
+
+        <!-- Cloud & Security -->
+        <div class="skill-cat reveal">
+          <h3>Cloud &amp; Security</h3>
+          <div class="tag-row">
+            <span class="tag">AWS Security</span>
+            <span class="tag">IAM</span>
+            <span class="tag">EC2</span>
+            <span class="tag">S3</span>
+            <span class="tag">CloudFox</span>
+            <span class="tag">Prowler</span>
+            <span class="tag">ScoutSuite</span>
+            <span class="tag">TruffleHog</span>
+          </div>
+        </div>
+
+        <!-- Security Concepts -->
+        <div class="skill-cat reveal">
+          <h3>Security Expertise</h3>
+          <div class="tag-row">
+            <span class="tag">VAPT</span>
+            <span class="tag">OWASP Top 10</span>
+            <span class="tag">OWASP API Top 10</span>
+            <span class="tag">OWASP Mobile Top 10</span>
+            <span class="tag">OWASP LLM Top 10</span>
+            <span class="tag">Authentication Testing</span>
+            <span class="tag">Authorization Testing</span>
+            <span class="tag">Risk Assessment</span>
+            <span class="tag">CVSS</span>
+          </div>
+        </div>
+
+        <!-- Platforms -->
+        <div class="skill-cat reveal">
+          <h3>Platforms &amp; Collaboration</h3>
+          <div class="tag-row">
+            <span class="tag">Kali Linux</span>
+            <span class="tag">Windows</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Technical Reporting</span>
+            <span class="tag">Remediation Validation</span>
+          </div>
+        </div>
+
+        <!-- Programming -->
+        <div class="skill-cat reveal">
+          <h3>Programming &amp; Database</h3>
+          <div class="tag-row">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-tag reveal" style="justify-content:center;display:flex;">06 / Get in touch</div>
+      <h2 class="reveal">Contact me</h2>
+      <p class="reveal">Have a security gap you'd like a second set of eyes on? Let's talk.</p>
+      <div class="social-row reveal" id="socialRow"></div>
+    </div>
+  </section>
+
+  <footer>© 2026 Mandlik Pravin — ALL SYSTEMS PATCHED. BUILT WITH SECURE.</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
